@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+            justify-items: center;
+        }
+        section{
+            background-color: brown;
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      
+    </div>
+    <script>
+        var a =5
+        if(a==5)
+    {
+        var a=6
+        console.log(a);
+        
+    }
+    console.log(a)
+    let container=document.getElementsByClassName("container")
+    for(var s=1;s<= 10;s++)
+    {
+        var section= document.createElement("section")
+        container.append("section")
+        section.onclick=()=>{
+            console.log(s);
+            
+        }
+    }
+    </script>
+</body>
+</html>
